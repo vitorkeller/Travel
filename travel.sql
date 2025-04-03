@@ -39,8 +39,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`usuCodigo`, `usuEmail`, `usuSenha`, `usuNome`) VALUES
-(1, 'vitorkeller1604@hotmail.com', 'Vi@134163', ''),
-(2, 'vitorkeller@hotmail.com', 'Vi@134', ''),
+(1, 'vitorkeller1604@hotmail.com', '123', ''),
+(2, 'vitorkeller@hotmail.com', '123', ''),
 (3, 'vitor@hotmail.com', 'Vi@', '');
 
 --
