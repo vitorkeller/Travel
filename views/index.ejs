@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login - TravelBuddy</title>
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100 font-sans">
+        <div class="bg-[url(/images/Background-register.jpg)] object-cover absolute inset-0"></div>
+        <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-lg rounded-2xl md:flex-row md:space-y-0">
+            <div class="flex flex-col justify-center p-8 md:p-14">
+                <div class="flex justify-center">
+                    <img src="/images/Logo.svg" class="w-64 mb-1 flex justify-center" alt="">
+                </div>
+                <span class="mt-4 text-2xl font-bold">Conectar conta</span>
+                <form action="/login" method="POST">
+                    <div class="py-4">
+                        <label for="email" class="mb-2 font-medium text-md">E-mail</label>
+                        <input type="email" id="email" name="email" required=""
+                            class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+                            placeholder="Digite seu e-mail" />
+                    </div>
+                    <div class="py-4">
+                        <label for="email" class="mb-2 font-medium text-md">Senha</label>
+                        <input type="password" id="senha" name="senha" required=""
+                            class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+                            placeholder="Digite sua senha" />
+                    </div>
+                    <div class="flex justify-between w-full py-4">
+                        <a href="#"><span class="font-semibold text-md">Esqueceu a senha?</span></a>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gray-300 text-black font-semibold p-2 rounded-lg mb-6 hover:bg-sky-300 hover:text-black">Entrar
+                    </button>
+                    <div class="text-center font-medium text-gray-600">Não tem uma conta? <a href="/register"
+                            class="text-sky-500 font-bold">Crie uma conta!</a>
+                    </div>
+                </form>
+            </div>
+            <div class="relative w-[450px]">
+                <img src="/images/foto-lateral.png" alt="imagem"
+                    class="w-[450px] h-full hidden rounded-r-2xl md:block object-cover" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
